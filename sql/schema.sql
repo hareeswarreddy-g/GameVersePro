@@ -1,0 +1,27 @@
+-- Schema for GameVersePro
+CREATE DATABASE IF NOT EXISTS gameverse_db;
+USE gameverse_db;
+
+CREATE TABLE IF NOT EXISTS users (
+  user_id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(100) NOT NULL UNIQUE,
+  wallet DECIMAL(10,2) DEFAULT 0.00
+);
+
+CREATE TABLE IF NOT EXISTS games (
+  game_id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,
+  price DECIMAL(8,2) NOT NULL,
+  stock INT DEFAULT 0
+);
+
+CREATE TABLE IF NOT EXISTS purchases (
+  purchase_id INT AUTO_INCREMENT PRIMARY KEY,
+  user_id INT NOT NULL,
+  game_id INT NOT NULL,
+  amount DECIMAL(8,2) NOT NULL,
+  status VARCHAR(50) NOT NULL,
+  purchased_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (user_id) REFERENCES users(user_id),
+  FOREIGN KEY (game_id) REFERENCES games(game_id)
+);

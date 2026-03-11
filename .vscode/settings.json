@@ -1,0 +1,10 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar"
+    ],
+    "css.lint.compatibleVendorPrefixes": "ignore",
+    "css.lint.vendorPrefix": "ignore",
+    "css.lint.unknownVendorSpecificProperties": "ignore",
+    "css.lint.validProperties": []
+}

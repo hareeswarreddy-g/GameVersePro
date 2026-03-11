@@ -1,0 +1,12 @@
+﻿javac : src\MainApp.java:117: error: cannot find symbol
+At line:1 char:1
++ javac -d "bin" src\*.java -cp "lib\mysql-connector-j-9.6.0.jar;lib\ja ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo              : NotSpecifi    ed: (src\MainApp.j    av...not find symb    ol:String) [], Rem    oteException
+    + FullyQualifiedEr    rorId : NativeComm    andError
+ 
+                ownedGames = purchaseDAO.getPurchasesByUser(currentUser.getUserId());
+                                        ^
+  symbol:   method getPurchasesByUser(int)
+  location: variable purchaseDAO of type PurchaseDAO
+1 error

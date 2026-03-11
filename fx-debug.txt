@@ -1,0 +1,56 @@
+Prism pipeline init order: sw 
+Using Double Precision Marlin Rasterizer
+Using dirty region optimizations
+Not using texture mask for primitives
+Not forcing power of 2 sizes for textures
+Using hardware CLAMP_TO_ZERO mode
+Opting in for HiDPI pixel scaling
+Not forcing UploadingPainter
+*** Fallback to Prism SW pipeline
+Prism pipeline name = com.sun.prism.sw.SWPipeline
+GraphicsPipeline.createPipeline failed for com.sun.prism.sw.SWPipeline
+java.lang.UnsatisfiedLinkError: no prism_sw in java.library.path: C:\Program Files\Java\jdk-25.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\chocolatey\bin;C:\Program Files\GitHub CLI\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\MySQL\MySQL Server 8.4\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\HP\AppData\Local\Microsoft\WindowsApps;C:\Users\HP\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\HP\AppData\Roaming\npm;.
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2285)
+	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:822)
+	at java.base/java.lang.System.loadLibrary(System.java:1685)
+	at javafx.graphics@25.0.2/com.sun.glass.utils.NativeLibLoader.loadLibraryInternal(NativeLibLoader.java:162)
+	at javafx.graphics@25.0.2/com.sun.glass.utils.NativeLibLoader.loadLibrary(NativeLibLoader.java:55)
+	at javafx.graphics@25.0.2/com.sun.prism.sw.SWPipeline.<clinit>(SWPipeline.java:42)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at java.base/java.lang.Class.forName(Class.java:458)
+	at javafx.graphics@25.0.2/com.sun.prism.GraphicsPipeline.createPipeline(GraphicsPipeline.java:222)
+	at javafx.graphics@25.0.2/com.sun.javafx.tk.quantum.QuantumRenderer$PipelineRunnable.init(QuantumRenderer.java:88)
+	at javafx.graphics@25.0.2/com.sun.javafx.tk.quantum.QuantumRenderer$PipelineRunnable.run(QuantumRenderer.java:121)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Graphics Device initialization failed for :  sw
+Error initializing QuantumRenderer: no suitable pipeline found
+java.lang.RuntimeException: java.lang.RuntimeException: Error initializing QuantumRenderer: no suitable pipeline found
+	at javafx.graphics@25.0.2/com.sun.javafx.tk.quantum.QuantumRenderer.getInstance(QuantumRenderer.java:272)
+	at javafx.graphics@25.0.2/com.sun.javafx.tk.quantum.QuantumToolkit.init(QuantumToolkit.java:233)
+	at javafx.graphics@25.0.2/com.sun.javafx.tk.Toolkit.getToolkit(Toolkit.java:251)
+	at javafx.graphics@25.0.2/com.sun.javafx.application.PlatformImpl.startup(PlatformImpl.java:279)
+	at javafx.graphics@25.0.2/com.sun.javafx.application.PlatformImpl.startup(PlatformImpl.java:159)
+	at javafx.graphics@25.0.2/com.sun.javafx.application.LauncherImpl.startToolkit(LauncherImpl.java:657)
+	at javafx.graphics@25.0.2/com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:415)
+	at javafx.graphics@25.0.2/com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:370)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:1171)
+Caused by: java.lang.RuntimeException: Error initializing QuantumRenderer: no suitable pipeline found
+	at javafx.graphics@25.0.2/com.sun.javafx.tk.quantum.QuantumRenderer$PipelineRunnable.init(QuantumRenderer.java:91)
+	at javafx.graphics@25.0.2/com.sun.javafx.tk.quantum.QuantumRenderer$PipelineRunnable.run(QuantumRenderer.java:121)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:119)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:1171)
+Caused by: java.lang.RuntimeException: No toolkit found
+	at javafx.graphics@25.0.2/com.sun.javafx.tk.Toolkit.getToolkit(Toolkit.java:263)
+	at javafx.graphics@25.0.2/com.sun.javafx.application.PlatformImpl.startup(PlatformImpl.java:279)
+	at javafx.graphics@25.0.2/com.sun.javafx.application.PlatformImpl.startup(PlatformImpl.java:159)
+	at javafx.graphics@25.0.2/com.sun.javafx.application.LauncherImpl.startToolkit(LauncherImpl.java:657)
+	at javafx.graphics@25.0.2/com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:415)
+	at javafx.graphics@25.0.2/com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:370)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	... 2 more

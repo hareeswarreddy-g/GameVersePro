@@ -1,0 +1,767 @@
+﻿javac : src\MainApp.java:1: 
+error: package 
+javafx.animation does not 
+exist
+At line:1 char:1
++ javac -d "C:\Users\HP\Deskt
+op\GameVersePro\bin" 
+src\MainApp.java src\ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
+    + CategoryInfo           
+   : NotSpecified: (src\Mai  
+  nApp.jav... does not exi   
+ st:String) [], RemoteExc    
+eption
+    + FullyQualifiedErrorId  
+   : NativeCommandError
+ 
+import javafx.animation.Scale
+Transition;
+                       ^
+src\MainApp.java:2: error: 
+package javafx.animation 
+does not exist
+import javafx.animation.Pause
+Transition;
+                       ^
+src\MainApp.java:3: error: 
+package javafx.application 
+does not exist
+import javafx.application.App
+lication;
+                         ^
+src\MainApp.java:4: error: 
+package javafx.collections 
+does not exist
+import javafx.collections.FXC
+ollections;
+                         ^
+src\MainApp.java:5: error: 
+package javafx.collections 
+does not exist
+import javafx.collections.Obs
+ervableList;
+                         ^
+src\MainApp.java:6: error: 
+package javafx.geometry does 
+not exist
+import 
+javafx.geometry.Insets;
+                      ^
+src\MainApp.java:7: error: 
+package javafx.scene does 
+not exist
+import javafx.scene.Scene;
+                   ^
+src\MainApp.java:9: error: 
+package javafx.scene.layout 
+does not exist
+import javafx.scene.layout.Bo
+rderPane;
+                          ^
+src\MainApp.java:10: error: 
+package javafx.scene.layout 
+does not exist
+import 
+javafx.scene.layout.HBox;
+                          ^
+src\MainApp.java:11: error: 
+package javafx.scene.layout 
+does not exist
+import 
+javafx.scene.layout.VBox;
+                          ^
+src\MainApp.java:12: error: 
+package javafx.scene.layout 
+does not exist
+import javafx.scene.layout.St
+ackPane;
+                          ^
+src\MainApp.java:13: error: 
+package javafx.scene.shape 
+does not exist
+import 
+javafx.scene.shape.Circle;
+                         ^
+src\MainApp.java:14: error: 
+package javafx.scene.shape 
+does not exist
+import 
+javafx.scene.shape.SVGPath;
+                         ^
+src\MainApp.java:15: error: 
+package javafx.util does not 
+exist
+import javafx.util.Duration;
+                  ^
+src\MainApp.java:16: error: 
+package javafx.stage does 
+not exist
+import javafx.stage.Stage;
+                   ^
+src\MainApp.java:21: error: 
+cannot find symbol
+public class MainApp extends 
+Application {
+                             
+^
+  symbol: class Application
+src\MainApp.java:23: error: 
+cannot find symbol
+    private User currentUser;
+            ^
+  symbol:   class User
+  location: class MainApp
+src\MainApp.java:24: error: 
+cannot find symbol
+    private Stage 
+primaryStage;
+            ^
+  symbol:   class Stage
+  location: class MainApp
+src\MainApp.java:25: error: 
+cannot find symbol
+    private final UserDAO 
+userDAO = new UserDAO();
+                  ^
+  symbol:   class UserDAO
+  location: class MainApp
+src\MainApp.java:26: error: 
+cannot find symbol
+    private final 
+PurchaseDAO purchaseDAO = 
+new PurchaseDAO();
+                  ^
+  symbol:   class PurchaseDAO
+  location: class MainApp
+src\MainApp.java:28: error: 
+cannot find symbol
+    private final 
+ObservableList<Game> games = 
+FXCollections.observableArray
+List();
+                  ^
+  symbol:   class 
+ObservableList
+  location: class MainApp
+src\MainApp.java:28: error: 
+cannot find symbol
+    private final 
+ObservableList<Game> games = 
+FXCollections.observableArray
+List();
+                             
+    ^
+  symbol:   class Game
+  location: class MainApp
+src\MainApp.java:29: error: 
+cannot find symbol
+    private final List<Game> 
+cart = new ArrayList<>();
+                       ^
+  symbol:   class Game
+  location: class MainApp
+src\MainApp.java:30: error: 
+cannot find symbol
+    private List<Purchase> 
+ownedGames = new 
+ArrayList<>();
+                 ^
+  symbol:   class Purchase
+  location: class MainApp
+src\MainApp.java:33: error: 
+cannot find symbol
+    private Label cartLabel;
+            ^
+  symbol:   class Label
+  location: class MainApp
+src\MainApp.java:34: error: 
+cannot find symbol
+    private StackPane 
+rootPane;
+            ^
+  symbol:   class StackPane
+  location: class MainApp
+src\MainApp.java:37: error: 
+cannot find symbol
+    public void start(Stage 
+primaryStage) {
+                      ^
+  symbol:   class Stage
+  location: class MainApp
+src\MainApp.java:46: error: 
+cannot find symbol
+    private Scene 
+buildLoginScreen() {
+            ^
+  symbol:   class Scene
+  location: class MainApp
+src\MainApp.java:127: error: 
+cannot find symbol
+    private Scene 
+buildMainScreen() {
+            ^
+  symbol:   class Scene
+  location: class MainApp
+src\MainApp.java:253: error: 
+cannot find symbol
+    private void 
+processCheckout(Label 
+userInfo) {
+                             
+    ^
+  symbol:   class Label
+  location: class MainApp
+src\MainApp.java:417: error: 
+cannot find symbol
+    private Button BuyBtnRef;
+            ^
+  symbol:   class Button
+  location: class MainApp
+src\MainApp.java:419: error: 
+package javafx.scene.image 
+does not exist
+    private 
+javafx.scene.image.Image 
+getGameImage(String title) {
+                             
+ ^
+src\MainApp.java:8: error: 
+package javafx.scene.control 
+does not exist
+import 
+javafx.scene.control.*;
+                   ^
+src\MainApp.java:25: error: 
+cannot find symbol
+    private final UserDAO 
+userDAO = new UserDAO();
+                             
+           ^
+  symbol:   class UserDAO
+  location: class MainApp
+src\MainApp.java:26: error: 
+cannot find symbol
+    private final 
+PurchaseDAO purchaseDAO = 
+new PurchaseDAO();
+                             
+                   ^
+  symbol:   class PurchaseDAO
+  location: class MainApp
+src\MainApp.java:28: error: 
+cannot find symbol
+    private final 
+ObservableList<Game> games = 
+FXCollections.observableArray
+List();
+                             
+                  ^
+  symbol:   variable 
+FXCollections
+  location: class MainApp
+src\MainApp.java:36: error: 
+method does not override or 
+implement a method from a 
+supertype
+    @Override
+    ^
+src\MainApp.java:41: error: 
+cannot find symbol
+        Scene loginScene = 
+buildLoginScreen();
+        ^
+  symbol:   class Scene
+  location: class MainApp
+src\MainApp.java:47: error: 
+cannot find symbol
+        VBox root = new 
+VBox(20);
+        ^
+  symbol:   class VBox
+  location: class MainApp
+src\MainApp.java:47: error: 
+cannot find symbol
+        VBox root = new 
+VBox(20);
+                        ^
+  symbol:   class VBox
+  location: class MainApp
+src\MainApp.java:48: error: 
+package javafx.geometry does 
+not exist
+        root.setAlignment(jav
+afx.geometry.Pos.CENTER);
+                             
+            ^
+src\MainApp.java:51: error: 
+cannot find symbol
+        VBox loginCard = new 
+VBox(20);
+        ^
+  symbol:   class VBox
+  location: class MainApp
+src\MainApp.java:51: error: 
+cannot find symbol
+        VBox loginCard = new 
+VBox(20);
+                             
+^
+  symbol:   class VBox
+  location: class MainApp
+src\MainApp.java:53: error: 
+package javafx.geometry does 
+not exist
+        loginCard.setAlignmen
+t(javafx.geometry.Pos.CENTER)
+;
+                             
+                 ^
+src\MainApp.java:56: error: 
+cannot find symbol
+        Label appTitle = new 
+Label("GameVersePro");
+        ^
+  symbol:   class Label
+  location: class MainApp
+src\MainApp.java:56: error: 
+cannot find symbol
+        Label appTitle = new 
+Label("GameVersePro");
+                             
+^
+  symbol:   class Label
+  location: class MainApp
+src\MainApp.java:60: error: 
+cannot find symbol
+        Label subtitle = new 
+Label("Sign in to access the 
+store");
+        ^
+  symbol:   class Label
+  location: class MainApp
+src\MainApp.java:60: error: 
+cannot find symbol
+        Label subtitle = new 
+Label("Sign in to access the 
+store");
+                             
+^
+  symbol:   class Label
+  location: class MainApp
+src\MainApp.java:63: error: 
+cannot find symbol
+        TextField userField 
+= new TextField();
+        ^
+  symbol:   class TextField
+  location: class MainApp
+src\MainApp.java:63: error: 
+cannot find symbol
+        TextField userField 
+= new TextField();
+                             
+     ^
+  symbol:   class TextField
+  location: class MainApp
+src\MainApp.java:68: error: 
+cannot find symbol
+        HBox authButtons = 
+new HBox(15);
+        ^
+  symbol:   class HBox
+  location: class MainApp
+src\MainApp.java:68: error: 
+cannot find symbol
+        HBox authButtons = 
+new HBox(15);
+                             
+  ^
+  symbol:   class HBox
+  location: class MainApp
+src\MainApp.java:69: error: 
+package javafx.geometry does 
+not exist
+        authButtons.setAlignm
+ent(javafx.geometry.Pos.CENTE
+R);
+                             
+                   ^
+src\MainApp.java:70: error: 
+cannot find symbol
+        Button loginBtn = 
+new Button("Login");
+        ^
+  symbol:   class Button
+  location: class MainApp
+src\MainApp.java:70: error: 
+cannot find symbol
+        Button loginBtn = 
+new Button("Login");
+                             
+ ^
+  symbol:   class Button
+  location: class MainApp
+src\MainApp.java:74: error: 
+cannot find symbol
+        Button registerBtn = 
+new Button("Register");
+        ^
+  symbol:   class Button
+  location: class MainApp
+src\MainApp.java:74: error: 
+cannot find symbol
+        Button registerBtn = 
+new Button("Register");
+                             
+    ^
+  symbol:   class Button
+  location: class MainApp
+src\MainApp.java:84: error: 
+cannot find symbol
+                User u = user
+DAO.findByUsername(username);
+                ^
+  symbol:   class User
+  location: class MainApp
+src\MainApp.java:107: error: 
+cannot find symbol
+        Scene scene = new 
+Scene(root, 1000, 600);
+        ^
+  symbol:   class Scene
+  location: class MainApp
+src\MainApp.java:107: error: 
+cannot find symbol
+        Scene scene = new 
+Scene(root, 1000, 600);
+                          ^
+  symbol:   class Scene
+  location: class MainApp
+src\MainApp.java:108: error: 
+cannot find symbol
+        scene.getStylesheets(
+).add(getClass().getResource(
+"/style.css") != null ? getCl
+ass().getResource("/style.css
+").toExternalForm() : 
+"file:style.css");
+                             
+      ^
+  symbol:   method getClass()
+  location: class MainApp
+src\MainApp.java:108: error: 
+cannot find symbol
+        scene.getStylesheets(
+).add(getClass().getResource(
+"/style.css") != null ? getCl
+ass().getResource("/style.css
+").toExternalForm() : 
+"file:style.css");
+                             
+                             
+                        ^
+  symbol:   method getClass()
+  location: class MainApp
+src\MainApp.java:121: error: 
+cannot find symbol
+        for (Purchase p : 
+ownedGames) {
+             ^
+  symbol:   class Purchase
+  location: class MainApp
+src\MainApp.java:130: error: 
+cannot find symbol
+        rootPane = new 
+StackPane();
+                       ^
+  symbol:   class StackPane
+  location: class MainApp
+src\MainApp.java:131: error: 
+cannot find symbol
+        HBox mainLayout = 
+new HBox();
+        ^
+  symbol:   class HBox
+  location: class MainApp
+src\MainApp.java:131: error: 
+cannot find symbol
+        HBox mainLayout = 
+new HBox();
+                             
+ ^
+  symbol:   class HBox
+  location: class MainApp
+src\MainApp.java:133: error: 
+cannot find symbol
+        Scene scene = new 
+Scene(rootPane, 1000, 600);
+        ^
+  symbol:   class Scene
+  location: class MainApp
+src\MainApp.java:133: error: 
+cannot find symbol
+        Scene scene = new 
+Scene(rootPane, 1000, 600);
+                          ^
+  symbol:   class Scene
+  location: class MainApp
+src\MainApp.java:135: error: 
+cannot find symbol
+                .add(getClass
+().getResource("/style.css") 
+!= null
+                     ^
+  symbol:   method getClass()
+  location: class MainApp
+src\MainApp.java:136: error: 
+cannot find symbol
+                        ? get
+Class().getResource("/style.c
+ss").toExternalForm()
+                          ^
+  symbol:   method getClass()
+  location: class MainApp
+src\MainApp.java:140: error: 
+cannot find symbol
+        VBox sidebar = new 
+VBox(20);
+        ^
+  symbol:   class VBox
+  location: class MainApp
+src\MainApp.java:140: error: 
+cannot find symbol
+        VBox sidebar = new 
+VBox(20);
+                           ^
+  symbol:   class VBox
+  location: class MainApp
+src\MainApp.java:144: error: 
+cannot find symbol
+        Label appTitle = new 
+Label("GameVersePro");
+        ^
+  symbol:   class Label
+  location: class MainApp
+src\MainApp.java:144: error: 
+cannot find symbol
+        Label appTitle = new 
+Label("GameVersePro");
+                             
+^
+  symbol:   class Label
+  location: class MainApp
+src\MainApp.java:147: error: 
+cannot find symbol
+        VBox userSection = 
+new VBox(10);
+        ^
+  symbol:   class VBox
+  location: class MainApp
+src\MainApp.java:147: error: 
+cannot find symbol
+        VBox userSection = 
+new VBox(10);
+                             
+  ^
+  symbol:   class VBox
+  location: class MainApp
+src\MainApp.java:149: error: 
+cannot find symbol
+        Label userInfo = new 
+Label("Logged in as: " + 
+currentUser.getUsername() + 
+"\nBalance: $" + 
+currentUser.getWallet());
+        ^
+  symbol:   class Label
+  location: class MainApp
+src\MainApp.java:149: error: 
+cannot find symbol
+        Label userInfo = new 
+Label("Logged in as: " + 
+currentUser.getUsername() + 
+"\nBalance: $" + 
+currentUser.getWallet());
+                             
+^
+  symbol:   class Label
+  location: class MainApp
+src\MainApp.java:153: error: 
+cannot find symbol
+        Button logoutBtn = 
+new Button("Logout");
+        ^
+  symbol:   class Button
+  location: class MainApp
+src\MainApp.java:153: error: 
+cannot find symbol
+        Button logoutBtn = 
+new Button("Logout");
+                             
+  ^
+  symbol:   class Button
+  location: class MainApp
+src\MainApp.java:158: error: 
+cannot find symbol
+        VBox actionSection = 
+new VBox(10);
+        ^
+  symbol:   class VBox
+  location: class MainApp
+src\MainApp.java:158: error: 
+cannot find symbol
+        VBox actionSection = 
+new VBox(10);
+                             
+    ^
+  symbol:   class VBox
+  location: class MainApp
+src\MainApp.java:159: error: 
+cannot find symbol
+        Button refreshBtn = 
+new Button("Refresh Store");
+        ^
+  symbol:   class Button
+  location: class MainApp
+src\MainApp.java:159: error: 
+cannot find symbol
+        Button refreshBtn = 
+new Button("Refresh Store");
+                             
+   ^
+  symbol:   class Button
+  location: class MainApp
+src\MainApp.java:162: error: 
+cannot find symbol
+        Button topUpBtn = 
+new Button("Top-up Wallet");
+        ^
+  symbol:   class Button
+  location: class MainApp
+src\MainApp.java:162: error: 
+cannot find symbol
+        Button topUpBtn = 
+new Button("Top-up Wallet");
+                             
+ ^
+  symbol:   class Button
+  location: class MainApp
+src\MainApp.java:170: error: 
+cannot find symbol
+        VBox mainContent = 
+new VBox(20);
+        ^
+  symbol:   class VBox
+  location: class MainApp
+src\MainApp.java:170: error: 
+cannot find symbol
+        VBox mainContent = 
+new VBox(20);
+                             
+  ^
+  symbol:   class VBox
+  location: class MainApp
+src\MainApp.java:173: error: 
+package javafx.scene.layout 
+does not exist
+        
+HBox.setHgrow(mainContent, ja
+vafx.scene.layout.Priority.AL
+WAYS);
+                             
+                         ^
+src\MainApp.java:173: error: 
+cannot find symbol
+        
+HBox.setHgrow(mainContent, ja
+vafx.scene.layout.Priority.AL
+WAYS);
+        ^
+  symbol:   variable HBox
+  location: class MainApp
+src\MainApp.java:175: error: 
+cannot find symbol
+        HBox headerBox = new 
+HBox(20);
+        ^
+  symbol:   class HBox
+  location: class MainApp
+src\MainApp.java:175: error: 
+cannot find symbol
+        HBox headerBox = new 
+HBox(20);
+                             
+^
+  symbol:   class HBox
+  location: class MainApp
+src\MainApp.java:176: error: 
+package javafx.geometry does 
+not exist
+        headerBox.setAlignmen
+t(javafx.geometry.Pos.CENTER_
+LEFT);
+                             
+                 ^
+src\MainApp.java:177: error: 
+cannot find symbol
+        Label storeLabel = 
+new Label("Store");
+        ^
+  symbol:   class Label
+  location: class MainApp
+src\MainApp.java:177: error: 
+cannot find symbol
+        Label storeLabel = 
+new Label("Store");
+                             
+  ^
+  symbol:   class Label
+  location: class MainApp
+src\MainApp.java:180: error: 
+cannot find symbol
+        cartLabel = new 
+Label("Cart: 0 items");
+                        ^
+  symbol:   class Label
+  location: class MainApp
+src\MainApp.java:183: error: 
+cannot find symbol
+        Button checkoutBtn = 
+new Button("Checkout Cart");
+        ^
+  symbol:   class Button
+  location: class MainApp
+src\MainApp.java:183: error: 
+cannot find symbol
+        Button checkoutBtn = 
+new Button("Checkout Cart");
+                             
+    ^
+  symbol:   class Button
+  location: class MainApp
+src\MainApp.java:186: error: 
+package javafx.scene.layout 
+does not exist
+        
+javafx.scene.layout.Region 
+spacer = new 
+javafx.scene.layout.Region();
+                           ^
+src\MainApp.java:186: error: 
+package javafx.scene.layout 
+does not exist
+        
+javafx.scene.layout.Region 
+spacer = new 
+javafx.scene.layout.Region();
+                             
+                             
+         ^
+100 errors
+only showing the first 100 
+errors, of 165 total; use 
+-Xmaxerrs if you would like 
+to see more

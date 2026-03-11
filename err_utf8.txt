@@ -1,0 +1,125 @@
+﻿javac : 
+src\MainApp.java:71: 
+error: cannot find symbol
+At line:1 char:1
++ javac --module-path 
+"lib\javafx\lib" 
+--add-modules 
+javafx.controls,ja ...
++ ~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo       
+       : NotSpecified:   
+  (src\MainApp.jav...n   
+ ot find symbol:Strin    
+g) [], RemoteExcepti    
+on
+    + FullyQualifiedErro 
+   rId : NativeCommandE  
+  rror
+ 
+            User u = user
+DAO.getUser(username);
+                         
+   ^
+  symbol:   method 
+getUser(String)
+  location: variable 
+userDAO of type UserDAO
+src\MainApp.java:80: 
+error: cannot find symbol
+            if (userDAO.g
+etUser(username) != 
+null) { 
+showAlert("Error", 
+"Username taken"); 
+return; }
+                       ^
+  symbol:   method 
+getUser(String)
+  location: variable 
+userDAO of type UserDAO
+src\MainApp.java:81: 
+error: cannot find symbol
+            userDAO.creat
+eUser(username);
+                   ^
+  symbol:   method 
+createUser(String)
+  location: variable 
+userDAO of type UserDAO
+src\MainApp.java:82: 
+error: cannot find symbol
+            currentUser 
+= userDAO.getUser(usernam
+e);
+                         
+        ^
+  symbol:   method 
+getUser(String)
+  location: variable 
+userDAO of type UserDAO
+src\MainApp.java:114: 
+error: cannot find symbol
+        Label userInfo = 
+new Label("Logged in as: 
+" + currentUser.getUserna
+me() + "\nBalance: $" + c
+urrentUser.getBalance());
+                         
+                         
+                         
+                         
+          ^
+  symbol:   method 
+getBalance()
+  location: variable 
+currentUser of type User
+src\MainApp.java:177: 
+error: cannot find symbol
+            
+userInfo.setText("Logged 
+in as: " + currentUser.ge
+tUsername() + 
+"\nBalance: $" + currentU
+ser.getBalance());
+                         
+                         
+                         
+                         
+    ^
+  symbol:   method 
+getBalance()
+  location: variable 
+currentUser of type User
+src\MainApp.java:186: 
+error: cannot find symbol
+                
+currentUser = userDAO.get
+User(currentUser.getUsern
+ame());
+                         
+            ^
+  symbol:   method 
+getUser(String)
+  location: variable 
+userDAO of type UserDAO
+src\MainApp.java:187: 
+error: cannot find symbol
+                
+userInfo.setText("Logged 
+in as: " + currentUser.ge
+tUsername() + 
+"\nBalance: $" + currentU
+ser.getBalance());
+                         
+                         
+                         
+                         
+        ^
+  symbol:   method 
+getBalance()
+  location: variable 
+currentUser of type User
+8 errors

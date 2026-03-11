@@ -1,0 +1,202 @@
+﻿javac : src\MainApp.java:22: 
+error: package dao does not 
+exist
+At line:1 char:1
++ javac -d "bin" 
+src\MainApp.java 
+src\Restock.java 
+src\DBConnection.jav ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
+    + CategoryInfo           
+   : NotSpecified: (src\Mai  
+  nApp.jav... does not exi   
+ st:String) [], RemoteExc    
+eption
+    + FullyQualifiedErrorId  
+   : NativeCommandError
+ 
+import dao.UserDAO;
+          ^
+src\MainApp.java:23: error: 
+package dao does not exist
+import dao.PurchaseDAO;
+          ^
+src\MainApp.java:24: error: 
+package dao does not exist
+import dao.GameDAO;
+          ^
+src\MainApp.java:25: error: 
+package service does not 
+exist
+import 
+service.PurchaseService;
+              ^
+src\MainApp.java:26: error: 
+package model does not exist
+import model.User;
+            ^
+src\MainApp.java:27: error: 
+package model does not exist
+import model.Game;
+            ^
+src\MainApp.java:28: error: 
+package model does not exist
+import model.Purchase;
+            ^
+src\MainApp.java:29: error: 
+package util does not exist
+import util.DBConnection;
+           ^
+src\MainApp.java:33: error: 
+cannot find symbol
+    private User currentUser;
+            ^
+  symbol:   class User
+  location: class MainApp
+src\MainApp.java:35: error: 
+cannot find symbol
+    private final UserDAO 
+userDAO = new UserDAO();
+                  ^
+  symbol:   class UserDAO
+  location: class MainApp
+src\MainApp.java:36: error: 
+cannot find symbol
+    private final 
+PurchaseDAO purchaseDAO = 
+new PurchaseDAO();
+                  ^
+  symbol:   class PurchaseDAO
+  location: class MainApp
+src\MainApp.java:37: error: 
+cannot find symbol
+    private final GameDAO 
+gameDAO = new GameDAO();
+                  ^
+  symbol:   class GameDAO
+  location: class MainApp
+src\MainApp.java:38: error: 
+cannot find symbol
+    private final 
+PurchaseService 
+purchaseService = new 
+PurchaseService();
+                  ^
+  symbol:   class 
+PurchaseService
+  location: class MainApp
+src\MainApp.java:40: error: 
+cannot find symbol
+    private final 
+ObservableList<Game> games = 
+FXCollections.observableArray
+List();
+                             
+    ^
+  symbol:   class Game
+  location: class MainApp
+src\MainApp.java:41: error: 
+cannot find symbol
+    private final List<Game> 
+cart = new ArrayList<>();
+                       ^
+  symbol:   class Game
+  location: class MainApp
+src\MainApp.java:42: error: 
+cannot find symbol
+    private List<Purchase> 
+ownedGames = new 
+ArrayList<>();
+                 ^
+  symbol:   class Purchase
+  location: class MainApp
+src\MainApp.java:35: error: 
+cannot find symbol
+    private final UserDAO 
+userDAO = new UserDAO();
+                             
+           ^
+  symbol:   class UserDAO
+  location: class MainApp
+src\MainApp.java:36: error: 
+cannot find symbol
+    private final 
+PurchaseDAO purchaseDAO = 
+new PurchaseDAO();
+                             
+                   ^
+  symbol:   class PurchaseDAO
+  location: class MainApp
+src\MainApp.java:37: error: 
+cannot find symbol
+    private final GameDAO 
+gameDAO = new GameDAO();
+                             
+           ^
+  symbol:   class GameDAO
+  location: class MainApp
+src\MainApp.java:38: error: 
+cannot find symbol
+    private final 
+PurchaseService 
+purchaseService = new 
+PurchaseService();
+                             
+                           ^
+  symbol:   class 
+PurchaseService
+  location: class MainApp
+src\MainApp.java:96: error: 
+cannot find symbol
+                User u = user
+DAO.findByUsername(username);
+                ^
+  symbol:   class User
+  location: class MainApp
+src\MainApp.java:133: error: 
+cannot find symbol
+        for (Purchase p : 
+ownedGames) {
+             ^
+  symbol:   class Purchase
+  location: class MainApp
+src\MainApp.java:246: error: 
+cannot find symbol
+                        new U
+serDAO().updateWalletDelta(c,
+ currentUser.getUserId(), 
+amt);
+                            ^
+  symbol:   class UserDAO
+  location: class MainApp
+src\MainApp.java:272: error: 
+cannot find symbol
+        for (Game g : cart) 
+totalCost += g.getPrice();
+             ^
+  symbol:   class Game
+  location: class MainApp
+src\MainApp.java:281: error: 
+cannot find symbol
+            for (Game g : 
+cart) {
+                 ^
+  symbol:   class Game
+  location: class MainApp
+src\MainApp.java:355: error: 
+cannot find symbol
+            List<Game> list 
+= gameDAO.listAll();
+                 ^
+  symbol:   class Game
+  location: class MainApp
+src\MainApp.java:364: error: 
+cannot find symbol
+                    for 
+(Game g : list) {
+                         ^
+  symbol:   class Game
+  location: class MainApp
+27 errors

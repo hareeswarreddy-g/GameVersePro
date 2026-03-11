@@ -1,0 +1,167 @@
+﻿javac : src\MainApp.java:23: 
+error: cannot find symbol
+At line:1 char:1
++ javac -d "bin" 
+src\MainApp.java -cp "lib\mys
+ql-connector-j-9.6.0.jar; ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
+    + CategoryInfo           
+   : NotSpecified: (src\Mai  
+  nApp.jav...not find symb   
+ ol:String) [], RemoteExc    
+eption
+    + FullyQualifiedErrorId  
+   : NativeCommandError
+ 
+    private User currentUser;
+            ^
+  symbol:   class User
+  location: class MainApp
+src\MainApp.java:25: error: 
+cannot find symbol
+    private final UserDAO 
+userDAO = new UserDAO();
+                  ^
+  symbol:   class UserDAO
+  location: class MainApp
+src\MainApp.java:26: error: 
+cannot find symbol
+    private final 
+PurchaseDAO purchaseDAO = 
+new PurchaseDAO();
+                  ^
+  symbol:   class PurchaseDAO
+  location: class MainApp
+src\MainApp.java:28: error: 
+cannot find symbol
+    private final 
+ObservableList<Game> games = 
+FXCollections.observableArray
+List();
+                             
+    ^
+  symbol:   class Game
+  location: class MainApp
+src\MainApp.java:29: error: 
+cannot find symbol
+    private final List<Game> 
+cart = new ArrayList<>();
+                       ^
+  symbol:   class Game
+  location: class MainApp
+src\MainApp.java:30: error: 
+cannot find symbol
+    private List<Purchase> 
+ownedGames = new 
+ArrayList<>();
+                 ^
+  symbol:   class Purchase
+  location: class MainApp
+src\MainApp.java:25: error: 
+cannot find symbol
+    private final UserDAO 
+userDAO = new UserDAO();
+                             
+           ^
+  symbol:   class UserDAO
+  location: class MainApp
+src\MainApp.java:26: error: 
+cannot find symbol
+    private final 
+PurchaseDAO purchaseDAO = 
+new PurchaseDAO();
+                             
+                   ^
+  symbol:   class PurchaseDAO
+  location: class MainApp
+src\MainApp.java:84: error: 
+cannot find symbol
+                User u = user
+DAO.findByUsername(username);
+                ^
+  symbol:   class User
+  location: class MainApp
+src\MainApp.java:121: error: 
+cannot find symbol
+        for (Purchase p : 
+ownedGames) {
+             ^
+  symbol:   class Purchase
+  location: class MainApp
+src\MainApp.java:232: error: 
+cannot find symbol
+                    try (var 
+c = DBConnection.getConnectio
+n()) {
+                             
+    ^
+  symbol:   variable 
+DBConnection
+  location: class MainApp
+src\MainApp.java:234: error: 
+cannot find symbol
+                        new U
+serDAO().updateWalletDelta(c,
+ currentUser.getUserId(), 
+amt);
+                            ^
+  symbol:   class UserDAO
+  location: class MainApp
+src\MainApp.java:260: error: 
+cannot find symbol
+        for (Game g : cart) 
+totalCost += g.getPrice();
+             ^
+  symbol:   class Game
+  location: class MainApp
+src\MainApp.java:269: error: 
+cannot find symbol
+            for (Game g : 
+cart) {
+                 ^
+  symbol:   class Game
+  location: class MainApp
+src\MainApp.java:270: error: 
+cannot find symbol
+                purchaseServi
+ce.buyGame(currentUser.getUse
+rId(), g.getGameId());
+                ^
+  symbol:   variable 
+purchaseService
+  location: class MainApp
+src\MainApp.java:329: error: 
+cannot find symbol
+        st.setInterpolator(ja
+vafx.animation.Interpolator.O
+VAL_TEN);
+                             
+                           ^
+  symbol:   variable OVAL_TEN
+  location: class 
+Interpolator
+src\MainApp.java:343: error: 
+cannot find symbol
+            List<Game> list 
+= gameDAO.listAll();
+                 ^
+  symbol:   class Game
+  location: class MainApp
+src\MainApp.java:343: error: 
+cannot find symbol
+            List<Game> list 
+= gameDAO.listAll();
+                             
+ ^
+  symbol:   variable gameDAO
+  location: class MainApp
+src\MainApp.java:352: error: 
+cannot find symbol
+                    for 
+(Game g : list) {
+                         ^
+  symbol:   class Game
+  location: class MainApp
+19 errors
